@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alright Movies - Netflix Style</title>
+    <link rel="stylesheet" href="styles .css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="#">ALRIGHT MOVIES</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Movies</a>
+                <a href="#">TV Shows</a>
+                <a href="#">My List</a>
+                <a href="#">Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Section in Body -->
+    <div class="search-section">
+        <input type="text" id="search-input" placeholder="Search movies...">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero" id="hero-section">
+        <div class="overlay">
+            <h1 id="hero-title">Loading...</h1>
+            <p id="hero-description">Please wait while we load the best movies.</p>
+            <button class="btn btn-play" onclick="playHeroMovie()">▶ Play</button>
+            <button class="btn btn-info" onclick="showHeroTrailer()">ℹ More Info</button>
+        </div>
+    </div>
+
+    <!-- Movies Section -->
+    <div class="container">
+        <h2>Trending Now</h2>
+        <div class="movie-row" id="trending"></div>
+
+        <h2>Top Rated</h2>
+        <div class="movie-row" id="top-rated"></div>
+
+        <h2>Upcoming Movies</h2>
+        <div class="movie-row" id="upcoming"></div>
+    </div>
+
+    <!-- Trailer & Ad Modal -->
+    <div id="trailerModalContainer"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Movies</a>
+                <a href="#">TV Shows</a>
+                <a href="#">My List</a>
+                <a href="#">Account</a>
+            </div>
+            <p>© 2025 Alright Movies. All Rights Reserved.</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
